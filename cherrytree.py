@@ -14,7 +14,7 @@ number = int(number)
 length = input('How many courses? ')
 length = int(length)
 
-print('\nBon Appetit!')
+print('Bon Appetit!')
 
 for pwd in range(number):
   password = ''
