@@ -1,2 +1,4 @@
-# cherrytree
-PW gen.
+v0.0.1
+CherryTree
+
+Creative Commons - BY
