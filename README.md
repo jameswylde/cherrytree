@@ -1,4 +1,4 @@
-v0.0.1
-CherryTree
+v1.0.0
+CherryTree - Password generator (non-infosec)
 
 Creative Commons - BY
