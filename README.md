@@ -1,4 +1,4 @@
 v1.1
-CherryTree - Password generator (non-infosec)
+CherryTree - Password generator
 
-Beginner Python project - Ferus Wylde
+Simple passwords for none-InfoSec usage. Input number of passwords needed - output into .txt.
