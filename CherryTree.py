@@ -3,9 +3,19 @@ import random
 
 # Password Generator for non-InfoSec use. github: ferus-wylde
 
-print('''
+print('''   
 CherryTree
-__________
+___________________ 
+       _-_
+    /~~   ~~\\
+ /~~         ~~\\
+{               }
+ \  _-     -_  /
+   ~  \\\ //  ~
+       | |     
+       | |     
+      // \\\\
+___________________
 ''')
 
 chars = ['Aggressive', 'Alert', 'Alive', 'Ancient', 'Anxious', 'Arrow', 'Attractive', 'Average', 'Bad', 'Beautiful', 'Beige', 'Better', 'Big', 'Bitter', 'Black', 'Blue', 'Brown', 'Bumpy', 'Busy', 'Careful', 'Cheap', 'Chestnut', 'Clear', 'Cold', 'Combative', 'Cool', 'Cotton','Crazy', 'Crooked', 'Crystal', 'Dangerous', 'Dead', 'Delicious', 'Dim', 'Drab', 'Dry', 'Dull', 'Dusty', 'Elderly',' Excited', 'Expensive', 'Fancy', 'Fat', 'Few', 'Filthy', 'Fresh', 'Fuzzy', 'Giant', 'Good', 'Graceful', 'Granite', 'Green', 'Handsome', 'Happy', 'Hard', 'Harsh', 'Hollow', 'Hot', 'Huge', 'Hungry', 'Large', 'Lazy', 'Light', 'Long', 'Low', 'Massive', 'Mellow', 'Melodic', 'Miniscule', 'Modern', 'New', 'Noisy', 'Oak', 'Octagonal', 'Old', 'Orange', 'Oval', 'Petite', 'Pink', 'Plain', 'Plastic', 'Poor', 'Puny', 'Purple', 'Quiet', 'Rainy', 'Red', 'Rich', 'Right', 'Round', 'Sad', 'Safe', 'Salty', 'Sane', 'Scared', 'Shallow', 'Sharp', 'Shiny', 'Short', 'Shrill', 'Shy', 'Skinny', 'Small', 'Soft', 'Solid', 'Sore', 'Sour', 'Square', 'Steep', 'Sticky', 'Strong', 'Superior', 'Sweet', 'Swift', 'Tan', 'Tart', 'Teak', 'Teeny', 'Terrible', 'Tiny', 'Tired', 'Tremendous', 'Triangular', 'Ugly', 'Unusual', 'Weak', 'Weary', 'Wet', 'Whispering', 'White', 'Wild', 'Wooden', 'Woolen', 'Wrong', 'Young', 'Red', 'Blue', 'Green', 'Purple', 'Yellow', 'Black', 'White', 'Pink', 'Silver', 'Gold', 'Indigo', 'Cherry']
@@ -18,7 +28,7 @@ numbers_2 = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '0']
 
 punct = ['!', "?", "#", "$", "£"]
 
-number = input('''Number needed?
+number = input('''Cherries needed?
 ''')
 number = int(number)
 
