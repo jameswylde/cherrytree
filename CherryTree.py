@@ -1,22 +1,19 @@
+# Import libraries
+
 import sys
 import random
+from termcolor import cprint
+from pyfiglet import figlet_format
 
-# Password Generator for non-InfoSec use. github: ferus-wylde
+print('\n')
 
-print('''   
-CherryTree
-___________________ 
-       _-_
-    /~~   ~~\\
- /~~         ~~\\
-{               }
- \  _-     -_  /
-   ~  \\\ //  ~
-       | |     
-       | |     
-      // \\\\
-___________________
-''')
+# Password Generator for non-InfoSec use. github: ferus-
+
+# ASCII title
+
+cprint(figlet_format('CherryTree', font='standard'), 'red', attrs=['bold', 'dark'])
+
+# Exhaustive list of pronounceable words in Adjective+Noun+Num+Punctuation format
 
 chars = ['Aggressive', 'Alert', 'Alive', 'Ancient', 'Anxious', 'Arrow', 'Attractive', 'Average', 'Bad', 'Beautiful', 'Beige', 'Better', 'Big', 'Bitter', 'Black', 'Blue', 'Brown', 'Bumpy', 'Busy', 'Careful', 'Cheap', 'Chestnut', 'Clear', 'Cold', 'Combative', 'Cool', 'Cotton','Crazy', 'Crooked', 'Crystal', 'Dangerous', 'Dead', 'Delicious', 'Dim', 'Drab', 'Dry', 'Dull', 'Dusty', 'Elderly',' Excited', 'Expensive', 'Fancy', 'Fat', 'Few', 'Filthy', 'Fresh', 'Fuzzy', 'Giant', 'Good', 'Graceful', 'Granite', 'Green', 'Handsome', 'Happy', 'Hard', 'Harsh', 'Hollow', 'Hot', 'Huge', 'Hungry', 'Large', 'Lazy', 'Light', 'Long', 'Low', 'Massive', 'Mellow', 'Melodic', 'Miniscule', 'Modern', 'New', 'Noisy', 'Oak', 'Octagonal', 'Old', 'Orange', 'Oval', 'Petite', 'Pink', 'Plain', 'Plastic', 'Poor', 'Puny', 'Purple', 'Quiet', 'Rainy', 'Red', 'Rich', 'Right', 'Round', 'Sad', 'Safe', 'Salty', 'Sane', 'Scared', 'Shallow', 'Sharp', 'Shiny', 'Short', 'Shrill', 'Shy', 'Skinny', 'Small', 'Soft', 'Solid', 'Sore', 'Sour', 'Square', 'Steep', 'Sticky', 'Strong', 'Superior', 'Sweet', 'Swift', 'Tan', 'Tart', 'Teak', 'Teeny', 'Terrible', 'Tiny', 'Tired', 'Tremendous', 'Triangular', 'Ugly', 'Unusual', 'Weak', 'Weary', 'Wet', 'Whispering', 'White', 'Wild', 'Wooden', 'Woolen', 'Wrong', 'Young', 'Red', 'Blue', 'Green', 'Purple', 'Yellow', 'Black', 'White', 'Pink', 'Silver', 'Gold', 'Indigo', 'Cherry']
 
@@ -34,23 +31,29 @@ number = int(number)
 
 print('\n')
 
-# Create output file to write
+# Create output file to write in current directory
 
 f = open('pw.txt','w')
 
 # Lottery pick from wordsheet 
+def run():
+  for pwd in range(number):
+    password = ''
+    password += random.choice(chars)
+    password += random.choice(chars_2)
+    password += random.choice(numbers)
+    password += random.choice(numbers_2)
+    password += random.choice(punct)
+    print(password)
+    f.write(password + "\n")
+    f.close
 
-for pwd in range(number):
-  password = ''
-  password += random.choice(chars)
-  password += random.choice(chars_2)
-  password += random.choice(numbers)
-  password += random.choice(numbers_2)
-  password += random.choice(punct)
-  print(password)
-  f.write(password + "\n")
-  f.close
+  ask = str(input('\nStill hungry?\n'))
+  if ask.lower() in ('yes','y', 'Yes', 'ye', 'YES', 'yep'):
+      print('\n')  
+      run()   
+  else:
+      print('')
 
-
-print('\n')
-print('Bon Appetit!')
+run()
+print('Bon Appetit!\n')
