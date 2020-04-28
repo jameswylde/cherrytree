@@ -1,4 +1,2 @@
-v1.1
+v1.2
 CherryTree - Password generator (non-infosec)
-
-Beginner Python project - Ferus Wylde
