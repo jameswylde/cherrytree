@@ -28,9 +28,14 @@ numbers_2 = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '0']
 
 punct = ['!', "?", "#", "$", "£"]
 
-number = input('''Cherries needed?
-''')
-number = int(number)
+while True:
+      try:
+          number = int(input(('''Cherries needed?
+''')))
+          break
+      except:
+        print('\nThat\'s not on the menu - please try again.\n')
+
 
 print('\n')
 
